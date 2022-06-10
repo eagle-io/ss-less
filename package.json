@@ -5,6 +5,7 @@
     "email": "owen@socketstream.org"
   },
   "description": "Less (CSS) wrapper for SocketStream 0.3",
+  "license": "MIT",
   "version": "1.0.0",
   "main": "./lib/wrapper.js",
   "repository": {
