@@ -10,3 +10,10 @@ Add `ss-less` to your application's `package.json` file and then add this line t
 ```javascript
 ss.client.formatters.add(require('ss-less'));
 ```
+
+### Compile errors
+
+The formatter calls `callback(css)` on success and `callback(null, error)` on a
+read or compile failure. Consumers must check the optional second argument.
+Use the matching SocketStream pack error handling so a failed production pack
+exits with status 1 and a development CSS request returns status 500.

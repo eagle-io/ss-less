@@ -17,6 +17,9 @@
   "dependencies": {
     "less": "4.4.1"
   },
+  "scripts": {
+    "test": "node --test test/*.test.cjs"
+  },
   "devDependencies": {},
   "readme": "# Less (CSS) wrapper for SocketStream 0.3\n\nAllows you to use [Less](http://lesscss.org/) files (.less) in your SocketStream project.\n\n\n### Instructions\n\nAdd `ss-less` to your application's `package.json` file and then add this line to app.js:\n\n```javascript\nss.client.formatters.add(require('ss-less'));\n```",
   "_id": "ss-less@0.1.1",
